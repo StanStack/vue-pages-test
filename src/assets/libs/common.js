@@ -1,3 +1,5 @@
+import mui from './mui.min.js'
+
 // DEBUG 模式，统计所有请求的耗时
 var isDebug = false
 var commonPart = 'http://192.168.1.120:8090/disaster';
@@ -10,7 +12,7 @@ var hasTimeoutToast = false;
 var timeoutRequests = [];
 /**
  * Ajax請求
- * 
+ *
  * @param url 请求地址
  * @param params 传递参数
  * @param onSucceed 处理成功
@@ -171,7 +173,7 @@ function ajaxGet(url, params, onSuccess, info, hasMask) {
     });
     return arr;
   }
-  
+
 mui.plusReady(function() {
 	plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
 })

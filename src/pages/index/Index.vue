@@ -106,19 +106,19 @@
 
 		</div>
 		<footer class="bar bar-tab">
-			<a id="main" class="tab-item active" href="">
+			<a id="main" class="tab-item active" href="javascript:;">
 				<img src="../../assets/main(active).png" alt="">
 			</a>
-			<a id="monitor" class="tab-item" href="">
+			<a id="monitor" class="tab-item" href="javascript:;">
 				<img src="../../assets/monitor.png" alt="">
 			</a>
-			<a id="report" class="tab-item" href="">
+			<a id="report" class="tab-item" href="javascript:;">
 				<img src="../../assets/report.png" alt="">
 			</a>
-			<a id="news" class="tab-item" href="">
+			<a id="news" class="tab-item" href="javascript:;">
 				<img src="../../assets/news.png" alt="">
 			</a>
-			<a id="personal" class="tab-item" href="">
+			<a id="personal" class="tab-item" href="javascript:;">
 				<img src="../../assets/personal.png" alt="">
 			</a>
 		</footer>
@@ -132,11 +132,33 @@
 <script>
 import commoncss from '../../assets/libs/common.css'
 import muicss from '../../assets/libs/mui.min.css'
-// import commonjs from '../../assets/libs/common.js'
+import commonjs from '../../assets/libs/common.js'
 import rem from '../../assets/libs/flexRem.js'
 import mui from '../../assets/libs/mui.min.js'
 export default {
+  name: 'index',
+  components: {
 
+  },
+  data() {
+    return {
+
+
+    }
+  },
+  mounted() {
+    mui(".bar-tab").on('tap', '#monitor', function() {
+				mui.openWindow({
+					url: 'web/monitor.html',
+					show: {
+						aniShow: 'fade-in'
+					},
+				});
+			});
+  },
+  methods: {
+
+  }
 }
 /* localStorage.uuid = Date.now()
 			mui.plusReady(function() {
