@@ -7,7 +7,18 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#login',
   template: '<App/>',
-  components: { App }
-})
+  components: { App },
+  })
+  // Vue.component('todo-item', {
+  //   template: '\
+  //     <li>\
+  //       {{ title }}\
+  //       <button v-on:click="$emit(\'remove\')">Remove</button>\
+  //     </li>\
+  //   ',
+  //   props: ['title']
+  // })
+
+

@@ -27,7 +27,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'mui':path.resolve(__dirname,'../src/assets/libs/mui.min.js')
     }
   },
   module: {

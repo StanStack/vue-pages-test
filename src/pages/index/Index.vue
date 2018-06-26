@@ -109,7 +109,7 @@
 			<a id="main" class="tab-item active" href="javascript:;">
 				<img src="../../assets/main(active).png" alt="">
 			</a>
-			<a id="monitor" class="tab-item" href="javascript:;">
+			<a id="monitor" class="tab-item" href="login.html">
 				<img src="../../assets/monitor.png" alt="">
 			</a>
 			<a id="report" class="tab-item" href="javascript:;">
@@ -130,11 +130,11 @@
 
 
 <script>
-import commoncss from '../../assets/libs/common.css'
-import muicss from '../../assets/libs/mui.min.css'
-import commonjs from '../../assets/libs/common.js'
-import rem from '../../assets/libs/flexRem.js'
-import mui from '../../assets/libs/mui.min.js'
+import commoncss from '@/assets/libs/common.css'
+import muicss from '@/assets/libs/mui.min.css'
+import commonjs from '@/assets/libs/common.js'
+import rem from '@/assets/libs/flexRem.js'
+// import mui from '@/assets/libs/mui.min.js'
 export default {
   name: 'index',
   components: {
@@ -147,14 +147,14 @@ export default {
     }
   },
   mounted() {
-    mui(".bar-tab").on('tap', '#monitor', function() {
-				mui.openWindow({
-					url: 'web/monitor.html',
-					show: {
-						aniShow: 'fade-in'
-					},
-				});
-			});
+    // mui(".bar-tab").on('tap', '#monitor', function() {
+		// 		mui.openWindow({
+		// 			url: 'web/monitor.html',
+		// 			show: {
+		// 				aniShow: 'fade-in'
+		// 			},
+		// 		});
+		// 	});
   },
   methods: {
 
