@@ -7,15 +7,13 @@
 
 <script>
 export default {
-  data:function(){
-    return{
-
-    }
-  },
+  name:'todo-item',
   props: ['title']
 }
 </script>
 
 <style>
-
+  li{
+    list-style: none;
+  }
 </style>

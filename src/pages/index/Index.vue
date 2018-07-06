@@ -118,11 +118,10 @@
 			<a id="news" class="tab-item" href="javascript:;">
 				<img src="../../assets/news.png" alt="">
 			</a>
-			<a id="personal" class="tab-item" href="javascript:;">
+			<a id="personal" class="tab-item" href="personal.html">
 				<img src="../../assets/personal.png" alt="">
 			</a>
 		</footer>
-
   </div>
 
 </template>
@@ -135,10 +134,11 @@ import muicss from '@/assets/libs/mui.min.css'
 import commonjs from '@/assets/libs/common.js'
 import rem from '@/assets/libs/flexRem.js'
 // import mui from '@/assets/libs/mui.min.js'
+import hello from '@/components/Hello'
 export default {
   name: 'index',
   components: {
-
+    hello
   },
   data() {
     return {

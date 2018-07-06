@@ -23,9 +23,9 @@
 
 <script>
 import rem from '@/assets/libs/flexRem.js'
-import todoitem from '@/components/todo-item'
+import todoItem from '@/components/todo-item'
 export default {
-  components:{todoitem},
+  components:{todoItem},
   data: function() {
     return{
       newTodoText: '',
